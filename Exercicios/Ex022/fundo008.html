@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes de centralização vertical</title>
+    <style>
+        #conteiner{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute ;
+            height: 200px;
+            width: 400px;
+            background-color: yellow  ;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+        }
+        #conteudo2{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute ;
+            height: 200px;
+            width: 400px;
+            background-color: yellow  ;
+            left: 50%;
+            top: 50%;
+            transform: translate(-400px, 0px);
+            text-align: center;
+        }
+        #conteudo3{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute ;
+            height: 200px;
+            width: 400px;
+            background-color: yellow  ;
+            left: 50%;
+            top: 50%;
+            transform: translate(-400px, -200px);
+            text-align: center;
+        }
+        #conteudo4{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute ;
+            height: 200px;
+            width: 400px;
+            background-color: yellow  ;
+            left: 50%;
+            top: 50%;
+            transform: translate(0px, -200px);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner"></section>
+        <article id="conteudo">
+            <p>1
+            </p>
+        </article>
+        <article id="conteudo2">
+            <p>2</p>
+        </article>
+        <article id="conteudo3">
+            <p>3</p>
+        </article>
+        <article id="conteudo4">
+            <p>4</p>
+        </article>
+    </section>
+</body>
+</html>
